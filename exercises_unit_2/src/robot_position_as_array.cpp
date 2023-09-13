@@ -13,6 +13,6 @@ int main(int argc, char **argv) {
 
   for (int i = 0; i < 3; i++)
     std::cout << my_array[i] << " ";
-    std::cout << std::endl;
+  std::cout << std::endl;
   return 0;
 }
