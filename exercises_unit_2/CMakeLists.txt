@@ -138,6 +138,8 @@ add_executable(lists src/lists.cpp)
 target_link_libraries(lists ${catkin_LIBRARIES})
 add_executable(forward_lists src/forward_lists.cpp)
 target_link_libraries(forward_lists ${catkin_LIBRARIES})
+add_executable(path_coordinates src/path_coordinates.cpp)
+target_link_libraries(path_coordinates ${catkin_LIBRARIES})
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
