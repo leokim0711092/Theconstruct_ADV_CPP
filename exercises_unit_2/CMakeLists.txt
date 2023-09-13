@@ -130,6 +130,8 @@ include_directories(
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_executable(robot_position_as_array src/robot_position_as_array.cpp)
 target_link_libraries(robot_position_as_array ${catkin_LIBRARIES})
+add_executable(robot_heading_as_vector src/robot_heading_as_vector.cpp)
+target_link_libraries(robot_heading_as_vector ${catkin_LIBRARIES})
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
