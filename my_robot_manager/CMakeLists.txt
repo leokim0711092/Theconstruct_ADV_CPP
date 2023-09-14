@@ -9,6 +9,7 @@ project(my_robot_manager)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  nav_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -103,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
  INCLUDE_DIRS include/${PROJECT_NAME}/
  LIBRARIES my_robot_manager
- CATKIN_DEPENDS roscpp 
+ CATKIN_DEPENDS roscpp nav_msgs
 #  DEPENDS system_lib
 )
 
