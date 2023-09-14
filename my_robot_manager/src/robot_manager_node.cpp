@@ -3,6 +3,7 @@
 #include "ros/node_handle.h"
 #include "nav_msgs/Odometry.h"
 #include <iostream>
+#include <std_srvs/Trigger.h>
 
 
 int main(int argc, char **argv) {
@@ -10,7 +11,5 @@ int main(int argc, char **argv) {
   ros::NodeHandle nh;
   RobotManager rm = RobotManager(&nh, "/robot1/odom", "Turty", "Turtlebot3");
   rm.print_specifications();
-  RobotManager rm2 = RobotManager(&nh, "/robot2/odom", "Turty2", "TurtleBot3");
-  rm2.print_specifications();
   ros::spin();
 }
