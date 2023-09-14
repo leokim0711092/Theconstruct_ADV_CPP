@@ -10,7 +10,7 @@ class RobotManager{
         void print_specifications();
         RobotManager(ros::NodeHandle *nh, std::string topic, std::string name, std::string model);
         void odom_callback(const nav_msgs::Odometry::ConstPtr &msg); 
-
+        static int robot_count;
     private:
         std::string robot_name, robot_model;
         float battery_capacity_kwh = 0.16;
