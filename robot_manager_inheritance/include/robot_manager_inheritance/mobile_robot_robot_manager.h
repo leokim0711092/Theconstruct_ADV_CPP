@@ -15,4 +15,7 @@ class RobotManagerMoblie: public RobotManagerBase{
         float current_p_x = 0.0;
         float current_p_y = 0.0;
         ros::Subscriber odom_subscriber;
+        void displayRobotDetails();
+        float battery_charge_level = 0.55;
+        std::string type_of_battery = "Lead acid batteries";
 };

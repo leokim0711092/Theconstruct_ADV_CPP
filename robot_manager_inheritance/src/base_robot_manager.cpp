@@ -15,6 +15,7 @@ void RobotManagerBase::init_config_output_srv() {
 
 bool RobotManagerBase::ConfigOutputCallback(std_srvs::SetBool::Request &req,
                                             std_srvs::SetBool::Response &res) {
+  displayRobotDetails();
   if (req.data == output_enabled) {
     res.success = false;
     res.message = "Output configuration request is the same as the current "
@@ -31,4 +32,8 @@ bool RobotManagerBase::ConfigOutputCallback(std_srvs::SetBool::Request &req,
     ROS_INFO("Robot Manager console output enabled.");
   }
   return true;
+}
+void RobotManagerBase::displayRobotDetails(){
+    ROS_INFO("Robot Name: %s", robot_name.c_str());
+    ROS_INFO("Robot Location: %s", robot_location.c_str());
 }
