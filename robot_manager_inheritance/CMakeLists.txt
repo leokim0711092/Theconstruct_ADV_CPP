@@ -133,8 +133,8 @@ add_library(${PROJECT_NAME}
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(robot_manager_base_class_test_node src/base_robot_manager_node.cpp src/base_robot_manager.cpp)
-target_link_libraries(robot_manager_base_class_test_node ${catkin_LIBRARIES} ${PROJECT_NAME})
+# add_executable(robot_manager_base_class_test_node src/base_robot_manager_node.cpp src/base_robot_manager.cpp)
+# target_link_libraries(robot_manager_base_class_test_node ${catkin_LIBRARIES} ${PROJECT_NAME})
 # add new standalone executable file
 add_executable(mobile_robot_robot_manager_node
   src/mobile_robot_robot_manager_node.cpp
@@ -142,6 +142,7 @@ add_executable(mobile_robot_robot_manager_node
   src/base_robot_manager.cpp)
 
 target_link_libraries(mobile_robot_robot_manager_node ${catkin_LIBRARIES} ${PROJECT_NAME})
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
